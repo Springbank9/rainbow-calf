@@ -15,22 +15,83 @@
 
 </head>
 <body>
-    <div id="my-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
-    <ol class="carousel-indicators">
-        <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#my-carousel" data-slide-to="1"></li>
-        <li data-target="#my-carousel" data-slide-to="2"></li>
-    </ol>
+
+    <!--Navigation-->
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img class="responsive-image img-thumbnail ml-3" src="images/header-image.png" alt="black-face-print" style="height: 66px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#print">Print</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#painting">Painting
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#wildlife-photography">Wildlife Photography
+              </a>
+            </li>
+    <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   
+    <!--Carousel-->
+ <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+                    <!--Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="images/black-face-hill.jpeg" alt="First slide">
+            <div class="card bg-dark text-white">
+            <img class="d-block w-100" src="images/brown-calf2.jpeg" alt="Second slide">
+            
+
+  <div class="card-img-overlay">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a little longer.</p>
+    <p class="card-text">Last updated 3 mins ago</p>
+  </div>
+</div>
         </div>
         <div class="carousel-item">
+                        <div class="card bg-dark text-white">
             <img class="d-block w-100" src="images/hereford-cow.jpeg" alt="Second slide">
+            <div class="card-img-overlay">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a little longer.</p>
+    <p class="card-text">Last updated 3 mins ago</p>
+  </div>
+</div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="images/hill.jpeg" alt="Third slide">
-        </div>
+                        <div class="card bg-dark text-white">
+            <img class="d-block w-100" src="images/bull.jpg" alt="Third slide">
+            <div class="card-img-overlay">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a little longer.</p>
+    <p class="card-text">Last updated 3 mins ago</p>
+  </div>
+</div>
     </div>
     <a class="carousel-control-prev" href="#my-carousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -40,6 +101,40 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
+</div>
+</div>
+
+
+<br>
+<br>
+<br>
+<!--Card deck-->
+
+<div class="card-deck">
+  <div class="card">
+<img src="images/hereford-cow.jpeg">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a longer card It's a broader card with text below as a natural lead-in to extra content. This content is a little longer. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+<img src="images/black-face-lambs.jpeg">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+<img src="images/thrush.jpeg">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card It's a broader card with text below as a natural lead-in to extra content. This content is a little longer. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
 </div>
 </body>
 </html>
