@@ -1,76 +1,147 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    position: relative;
-    overflow-y: scroll;
+header .item {
+  height: 100vh;
+  position: relative;
 }
-
-#navbar {
-  background-color: #333; /* Black background color */
-  position: fixed; /* Make it stick/fixed */
-  top: 0; /* Stay on top */
-  width: 100%; /* Full width */
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+header .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-/* Style the navbar links */
-#navbar a {
-  float: left;
+header .item .cover {
+  padding: 75px 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+}
+header .item .cover .header-content {
+  position: relative;
+  padding: 56px;
+  overflow: hidden;
+}
+header .item .cover .header-content .line {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  border: 9px solid #fff;
+  -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+  clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+}
+header .item .cover .header-content h2 {
+  font-weight: 300;
+  font-size: 35px;
+  color: #fff;
+}
+header .item .cover .header-content h1 {
+  font-size: 56px;
+  font-weight: 600;
+  margin: 5px 0 20px;
+  word-spacing: 3px;
+  color: #fff;
+}
+header .item .cover .header-content h4 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  color: #fff;
+}
+header .owl-item.active h1 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 0.3s;
+}
+header .owl-item.active h2 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 0.3s;
+}
+header .owl-item.active h4 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+  animation-delay: 0.3s;
+}
+header .owl-item.active .line {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInLeft;
+  animation-delay: 0.3s;
+}
+header .owl-nav .owl-prev {
+  position: absolute;
+  left: 15px;
+  top: 43%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background: rgba(0, 0, 0, 0.5) !important;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
   display: block;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
+  z-index: 1000;
+  border-radius: 0;
 }
-
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
+header .owl-nav .owl-prev span {
+  font-size: 1.6875rem;
+  color: #fff;
 }
-
-.navbar {
-    position: fixed;
-    background-color:transparent;
+header .owl-nav .owl-prev:focus {
+  outline: 0;
 }
-.nav-item .nav-link {
-    font-family:"Lato", sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
+header .owl-nav .owl-prev:hover {
+  background: #000 !important;
 }
-
-.carousel-fade .carousel-item {
-	opacity: 0;
-	transition-duration: .6s;
-	transition-property: opacity;
+header .owl-nav .owl-next {
+  position: absolute;
+  right: 15px;
+  top: 43%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background: rgba(0, 0, 0, 0.5) !important;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-radius: 0;
 }
-
-.carousel-fade .carousel-item.active,
-.carousel-fade .carousel-item-next.carousel-item-left,
-.carousel-fade .carousel-item-prev.carousel-item-right {
-	opacity: 1;
+header .owl-nav .owl-next span {
+  font-size: 1.6875rem;
+  color: #fff;
 }
-
-.carousel-fade .active.carousel-item-left,
-.carousel-fade .active.carousel-item-right {
-	opacity: 0;
+header .owl-nav .owl-next:focus {
+  outline: 0;
 }
-
-.carousel-fade .carousel-item-next,
-.carousel-fade .carousel-item-prev,
-.carousel-fade .carousel-item.active,
-.carousel-fade .active.carousel-item-left,
-.carousel-fade .active.carousel-item-prev {
-	transform: translateX(0);
-	transform: translate3d(0, 0, 0);
+header .owl-nav .owl-next:hover {
+  background: #000 !important;
 }
-
-.carousel {
-  width:100%;
-  height: auto;}
-
-.carousel-item {
-    opacity: 0.7;
+header:hover .owl-prev {
+  left: 0px;
+  opacity: 1;
 }
-
-/* Card deck*/
-
+header:hover .owl-next {
+  right: 0px;
+  opacity: 1;
+}
